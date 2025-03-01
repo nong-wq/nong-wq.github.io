@@ -1,0 +1,69 @@
+<htlm>
+<head>
+<title>2356210027 - Giàng Thị Nông </title>
+
+<script>
+function tinhtong(x1,x2)
+{
+return parseInt (x1) + parseInt (x2);
+}
+function tinhhieu(x1,x2)
+{
+return parseInt (x1)- parseInt (x2);
+}
+function tinhtich(x1,x2)
+{
+return parseInt (x1) *parseInt (x2);
+}
+function tinhthuong(x1,x2)
+{
+return parseInt (x1)/parseInt (x2);
+}
+
+function tinhtongdayso (x1,x2)
+{
+var tong;
+tong=0;
+for(let i=parseInt (x1); i<=parseInt (x2); i++)
+tong=tong+i;
+localStrorage.x=tong;
+return tong;
+}
+ 
+ 
+function thongbao ()
+{
+
+for(let i=1; i<=5; i++)
+alert(localStrorage.x)
+
+return tb;
+}
+
+
+</script>
+</head>
+<body>
+<form>
+<lable> Số thứ 1: </lable>
+<input type="text" id="So1" name="So1">
+<br><br>
+<lable> Số thứ 2:</lable>
+<input type="text" id="So2" name="So2">
+<br><br>
+<lable> Số thứ 3:</lable>
+<input type="text" id="So3" name="So3">
+<br><br>
+<input type="button" onclick="So3.value=tinhtong(So1.value,So2.value)"  value="tinhtong">
+<input type="button" onclick="So3.value=tinhhieu(So1.value,So2.value)"  value="tinhhieu ">
+<input type="button" onclick="So3.value= tinhtich(So1.value,So2.value)"  value=" tinhtich">
+<input type="button" onclick="So3.value=tinhthuong(So1.value,So2.value)"  value="tinhthuong">
+<input type="button" onclick="So3.value=tinhtongdayso(So1.value,So2.value)"  value="tinhtongdayso">
+<input type="button" onclick="thongbao()" value ="Thông báo ">
+
+
+
+</form>
+
+</body>
+</htlm>
